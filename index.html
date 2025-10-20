@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santosh Sai • Front-End Developer Portfolio</title>
+  <meta name="description" content="Front-End Developer portfolio of Santosh Sai — React, Next.js, TypeScript, AWS, Micro-Frontends." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: { brand: { 50:'#eef2ff', 100:'#e0e7ff', 600:'#4f46e5', 700:'#4338ca', 900:'#1e1b4b' } },
+          boxShadow: { soft: '0 10px 30px rgba(2, 6, 23, 0.08)' }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    /* Print-friendly */
+    @media print {
+      nav, .no-print { display:none !important; }
+      .section { break-inside: avoid; }
+      body { font-size: 12px; }
+    }
+  </style>
+  <!-- SEO: JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Santosh Sai",
+    "jobTitle": "Front-End Developer",
+    "email": "mailto:Saisantosh35209@gmail.com",
+    "telephone": "+1-828-619-0533",
+    "worksFor": {"@type": "Organization", "name": "PNC Bank"},
+    "knowsAbout": ["React.js","Next.js","TypeScript","JavaScript","AWS","Micro Frontends","Redux","Zustand","Tailwind CSS"],
+    "url": ""
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Sticky Top Nav -->
+  <nav class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-white/70 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-14">
+        <a href="#home" class="font-extrabold tracking-tight text-lg">Santosh <span class="text-brand-600">Sai</span></a>
+        <div class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="#experience" class="hover:text-brand-600">Experience</a>
+          <a href="#skills" class="hover:text-brand-600">Skills</a>
+          <a href="#projects" class="hover:text-brand-600">Highlights</a>
+          <a href="#education" class="hover:text-brand-600">Education</a>
+          <a href="#contact" class="hover:text-brand-600">Contact</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="themeToggle" class="rounded-full p-2 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle theme">
+            <svg id="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 hidden dark:block"><path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/><path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V3A.75.75 0 0 1 12 2.25Zm0 16.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75ZM4.72 4.72a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06L4.72 5.78a.75.75 0 0 1 0-1.06Zm12.44 12.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06ZM2.25 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75Zm16.5 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM4.72 19.28a.75.75 0 0 1 1.06 0l1.06-1.06a.75.75 0 1 1 1.06 1.06L6.78 20.34a.75.75 0 0 1-1.06 0  .75.75 0 0 1 0-1.06Zm12.44-12.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L16.16 7.9a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            <svg id="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 dark:hidden"><path d="M21.752 15.002A9.718 9.718 0 0 1 12.004 22C6.49 22 2 17.523 2 12.03 2 7.65 4.867 3.94 8.86 2.487a.75.75 0 0 1 .93.98A7.719 7.719 0 0 0 10 6.03c0 4.304 3.492 7.796 7.796 7.796 1.19 0 2.318-.26 3.336-.752a.75.75 0 0 1 .62 1.928Z"/></svg>
+          </button>
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-white text-sm font-medium shadow-soft hover:bg-brand-700">Hire me</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="pt-28 pb-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Santosh Sai — <span class="text-brand-600">Front‑End Developer</span></h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">10+ years building fast, accessible, and scalable web apps in banking, healthcare, and e‑commerce. Expert in <strong>React</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong>, and cloud‑native delivery on <strong>AWS</strong>.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-5 py-2 text-sm font-medium">View Highlights</a>
+            <a href="https://www.linkedin.com/in/santoshfsd001/" target="_blank" rel="noopener noreferrer"
+   class="inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-700 px-5 py-2 text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+       class="w-5 h-5 text-[#0A66C2]">
+    <path d="M4.983 3.5a2.5 2.5 0 11.001 5.001A2.5 2.5 0 014.983 3.5zM4.5 9h1v12h-1V9zm5 0h1v1.5h.014c.139-.265.498-.75 1.41-.75 1.507 0 1.786.992 1.786 2.283V21h-1V12.5c0-.65-.011-1.5-.917-1.5-.917 0-1.083.716-1.083 1.457V21h-1V9z" />
+    <path d="M20.452 3.5H3.548A1.552 1.552 0 002 5.048v13.904A1.552 1.552 0 003.548 20.5h16.904A1.552 1.552 0 0022 18.952V5.048A1.552 1.552 0 0020.452 3.5zM7.985 19H5V9h2.985v10zM6.493 7.747a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm12.507 11.253h-2.985v-5.25c0-1.25-.025-2.875-1.75-2.875-1.75 0-2.018 1.367-2.018 2.78V19H9.28V9h2.86v1.367h.04c.398-.753 1.37-1.543 2.818-1.543 3.014 0 3.574 1.983 3.574 4.557V19z" />
+  </svg>
+  <span>LinkedIn</span>
+</a>
+
+
+           <a href="SaiSantoshReact.docx" download class="rounded-full border border-brand-600 text-brand-600 px-5 py-2 text-sm font-semibold">
+  Download Resume
+</a>
+          </div>
+          <div class="mt-4 text-sm text-slate-500">Dallas , TX • Open to Remote & Hybrid</div>
+        </div>
+        <div class="md:col-span-1">
+          <div class="relative rounded-2xl bg-gradient-to-br from-brand-50 to-white dark:from-slate-800 dark:to-slate-900 p-6 shadow-soft">
+            <ul class="grid grid-cols-2 gap-3 text-sm">
+              <li class="p-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">React.js</li>
+              <li class="p-3 rounded-xl bg-white dark:bg-slate-800 border">Next.js</li>
+              <li class="p-3 rounded-xl bg-white dark:bg-slate-800 border">TypeScript</li>
+              <li class="p-3 rounded-xl bg-white dark:bg-slate-800 border">Tailwind</li>
+              <li class="p-3 rounded-xl bg-white dark:bg-slate-800 border">Redux/Zustand</li>
+              <li class="p-3 rounded-xl bg-white dark:bg-slate-800 border">Node.js (BFF)</li>
+              <li class="p-3 rounded-xl bg-white dark:bg-slate-800 border">AWS (EKS/Lambda)</li>
+              <li class="p-3 rounded-xl bg-white dark:bg-slate-800 border">CI/CD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Experience -->
+  <section id="experience" class="section py-14 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl font-bold">Experience</h2>
+        <span class="text-sm text-slate-500">2013 — Present</span>
+      </div>
+      <div class="mt-8 grid gap-6">
+        <!-- PNC Bank -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/60 dark:bg-slate-950/40">
+          <header class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">PNC Bank — Senior Full Stack Developer</h3>
+              <p class="text-sm text-slate-500">New York, NY • Aug 2023 – Present</p>
+            </div>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand-600 text-white">React • Next.js • Micro‑Frontends</span>
+          </header>
+          <ul class="mt-4 list-disc pl-5 space-y-2 text-sm leading-6 text-slate-700 dark:text-slate-300">
+            <li>Redesigned banking dashboards with <strong>SSR/SSG</strong> in Next.js; cut load time ~30% and improved SEO.</li>
+            <li>Implemented <strong>BFF</strong> layer and <strong>GraphQL/REST</strong> integrations; reduced client latency under high traffic.</li>
+            <li>Decomposed monolith into <strong>Micro Frontends</strong>, shipped via <strong>Docker + Kubernetes (EKS)</strong> with CI/CD.</li>
+            <li>Hardened auth with <strong>JWT + RBAC</strong>, added <strong>WCAG 2.1</strong> accessibility and Lighthouse optimizations.</li>
+          </ul>
+        </article>
+        <!-- Ally Financial -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/60 dark:bg-slate-950/40">
+          <header class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">Ally Financial — Frontend Developer</h3>
+              <p class="text-sm text-slate-500">Michigan • Apr 2020 – Aug 2023</p>
+            </div>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand-600 text-white">React • Next.js • AWS</span>
+          </header>
+          <ul class="mt-4 list-disc pl-5 space-y-2 text-sm leading-6 text-slate-700 dark:text-slate-300">
+            <li>Built self‑service portals with <strong>Next.js SSR</strong> for calculators and loan flows; faster TTFB and SEO gains.</li>
+            <li>Centralized state via <strong>Redux</strong>, added <strong>Zustand</strong> hooks for lightweight UI state.</li>
+            <li>Introduced <strong>Cypress</strong> E2E tests and CI on <strong>Azure DevOps</strong>; reduced regressions release‑over‑release.</li>
+            <li>Delivered CDN + cache‑control strategy using <strong>CloudFront</strong> for high‑traffic UIs.</li>
+          </ul>
+        </article>
+        <!-- UnitedHealth Group -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/60 dark:bg-slate-950/40">
+          <header class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">UnitedHealth Group — Senior UI Developer</h3>
+              <p class="text-sm text-slate-500">Minnesota • Aug 2018 – Apr 2020</p>
+            </div>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand-600 text-white">React • Next.js • HIPAA</span>
+          </header>
+          <ul class="mt-4 list-disc pl-5 space-y-2 text-sm leading-6 text-slate-700 dark:text-slate-300">
+            <li>Delivered React SPAs for enrollment & claims with <strong>Context API</strong> and virtualized lists.</li>
+            <li>Built secure proxy APIs and <strong>role‑based access</strong>; aligned with <strong>WCAG/HIPAA</strong>.</li>
+            <li>Playwright automation and Jest coverage for forms, search, and claim workflows.</li>
+          </ul>
+        </article>
+        <!-- Amazon -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/60 dark:bg-slate-950/40">
+          <header class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="font-semibold">Amazon — Web Developer</h3>
+              <p class="text-sm text-slate-500">Hyderabad, India • May 2013 – Nov 2016</p>
+            </div>
+            <span class="text-xs px-2 py-1 rounded-full bg-brand-600 text-white">React • Next.js • SEO</span>
+          </header>
+          <ul class="mt-4 list-disc pl-5 space-y-2 text-sm leading-6 text-slate-700 dark:text-slate-300">
+            <li>React dashboards for inventory; Next.js prototypes for product pages with global CDN and image optimization.</li>
+            <li>Integrated catalog REST APIs; built Redux flows for cart/checkout; shipped Jest/Enzyme tests.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-bold">Technical Skills</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900">
+          <h3 class="font-semibold">Frontend</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">React, Next.js, Redux, Zustand, Context API, Hooks, HTML5, CSS3, TypeScript</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800">SSR/SSG</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800">Accessibility (WCAG)</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800">Micro‑Frontends</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800">Tailwind, Styled Components</span>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900">
+          <h3 class="font-semibold">Backend & Cloud</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Node.js, Express, REST, GraphQL, BFF Architecture</p>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">AWS (EC2, Lambda, S3, CloudFront, API Gateway, EKS), Docker, Kubernetes</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900">
+          <h3 class="font-semibold">DevOps & Testing</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">GitHub, Bitbucket, Jenkins, TeamCity, Azure DevOps, AWS CodePipeline</p>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Jest, React Testing Library, Playwright, Cypress, Selenium</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900">
+          <h3 class="font-semibold">Data & Misc</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">PostgreSQL, Oracle, MySQL, MongoDB • Agile, Scrum, Kanban</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Highlights / Impact -->
+  <section id="projects" class="section py-14 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-bold">Impact Highlights</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/60 dark:bg-slate-950/40">
+          <h3 class="font-semibold">Performance</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">30% faster load times through SSR/SSG, bundle trimming, and CDN caching.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/60 dark:bg-slate-950/40">
+          <h3 class="font-semibold">Reliability</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Micro‑frontends on EKS with autoscaling; resilient releases via CI/CD.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/60 dark:bg-slate-950/40">
+          <h3 class="font-semibold">Security & Compliance</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">OAuth2, JWT, MFA, RBAC with WCAG/HIPAA alignment for regulated domains.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-bold">Education</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900">
+          <h3 class="font-semibold">M.S., Computer & Information Science</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">University of Alabama — 2019</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900">
+          <h3 class="font-semibold">B.S., Computer Science</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">Jawaharlal Nehru University — 2013</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section py-14 bg-gradient-to-b from-white to-brand-50/40 dark:from-slate-900 dark:to-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="rounded-3xl border border-slate-200 dark:border-slate-800 p-8 bg-white/80 dark:bg-slate-900/80 backdrop-blur">
+        <h2 class="text-2xl font-bold">Let’s build something great</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Open to Senior Front‑End roles (React/Next.js) — remote or hybrid.</p>
+        <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+          <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-slate-50 dark:bg-slate-950">
+            <div class="font-semibold">Email</div>
+            <a class="mt-1 block text-brand-600 hover:underline" href="mailto:Saisantosh35209@gmail.com">Saisantosh35209@gmail.com</a>
+          </div>
+          <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-slate-50 dark:bg-slate-950">
+            <div class="font-semibold">Phone</div>
+            <a class="mt-1 block" href="tel:+18286190533">+1 (828) 619‑0533</a>
+          </div>
+          <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-slate-50 dark:bg-slate-950">
+            <div class="font-semibold">Location</div>
+            <div class="mt-1">Dallas, TX • USA</div>
+          </div>
+        </div>
+        <form class="mt-6 grid gap-4 md:grid-cols-2" onsubmit="event.preventDefault(); alert('Thanks! I\'ll get back to you shortly.');">
+          <input required placeholder="Your name" class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 outline-none focus:ring-2 focus:ring-brand-600" />
+          <input required type="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 outline-none focus:ring-2 focus:ring-brand-600" />
+          <textarea required placeholder="Message" class="md:col-span-2 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-4 py-3 outline-none focus:ring-2 focus:ring-brand-600" rows="4"></textarea>
+          <button class="justify-self-start rounded-full bg-brand-600 hover:bg-brand-700 text-white px-6 py-2.5 font-medium shadow-soft">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-500">
+    © <span id="year"></span> Santosh Sai • Built with HTML + Tailwind • <a class="hover:underline" href="#home">Back to top</a>
+  </footer>
+
+  <script>
+    // Theme toggle with persistence
+    const root = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+    }
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
